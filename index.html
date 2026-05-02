@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon-impulso-digital.png">
+    <title>Criação de Sites e Marketing Digital em Porto Velho | Impulso Digital - Modelo de Estúdio de Tatuagem — Arte na Pele</title>
+    <script src="/_sdk/element_sdk.js"></script>
+    <script src="/_sdk/data_sdk.js"></script>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="h-full">
+    <main class="relative min-h-full w-full" style="width:100%;">
+        <header class="relative z-30 border-b border-white/5 backdrop-blur-sm bg-black/40">
+            <nav class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full border-2 border-[#E63946] flex items-center justify-center">
+                        <i data-lucide="syringe" class="w-5 h-5 text-[#E63946]"></i>
+                    </div>
+                    <h1 id="logoText" class="font-marker text-2xl md:text-3xl text-white logo-sign">SUA LOGO AQUI!</h1>
+                </div>
+                <div class="hidden md:flex items-center gap-8 font-stencil text-sm">
+                    <a href="#portfolio" class="nav-link">Portfólio</a>
+                    <a href="#orcamento" class="nav-link">Orçamento</a>
+                    <a href="#cuidados" class="nav-link">Cuidados</a>
+                </div>
+                <button id="menuToggle" class="md:hidden text-white" aria-label="Abrir menu">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </nav>
+            <div id="mobileMenu" class="mobile-menu md:hidden bg-black/80 border-t border-white/5">
+                <div class="flex flex-col px-5 py-4 gap-4 font-stencil">
+                    <a href="#portfolio" class="nav-link py-1">Portfólio</a>
+                    <a href="#orcamento" class="nav-link py-1">Orçamento</a>
+                    <a href="#cuidados" class="nav-link py-1">Cuidados</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero-bg relative z-10">
+            <div class="max-w-5xl mx-auto px-5 py-20 md:py-32 text-center relative z-10">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/60 border border-white/10 mb-6">
+                    <span class="w-2 h-2 rounded-full bg-[#E63946] animate-pulse"></span>
+                    <span class="font-stencil text-xs tracking-widest text-white/80">ESTÚDIO PROFISSIONAL DE TATUAGEM</span>
+                </div>
+                <h2 id="heroTitle" class="hero-title font-display text-4xl md:text-6xl lg:text-7xl font-black leading-tight text-white hero-title-glow">
+                    Sua pele, sua história,<br><span class="text-[#E63946]">nossa arte.</span>
+                </h2>
+                <p id="heroSubtitle" class="mt-6 text-base md:text-lg text-white/70 max-w-2xl mx-auto">
+                    Especialistas em traços finos, realismo e blackwork. Segurança e arte em cada agulha.
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="#orcamento" id="heroCTA" class="cta-glow inline-flex items-center gap-2 px-8 py-4 font-stencil text-sm md:text-base tracking-widest text-white rounded">
+                        <i data-lucide="zap" class="w-4 h-4"></i> SOLICITAR ORÇAMENTO AGORA
+                    </a>
+                    <a href="#portfolio" class="inline-flex items-center gap-2 px-8 py-4 font-stencil text-sm tracking-widest text-white/80 hover:text-white border border-white/20 hover:border-white/60 rounded transition">
+                        VER PORTFÓLIO <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                    </a>
+                </div>
+                <div class="mt-16 grid grid-cols-3 gap-4 md:gap-8 max-w-2xl mx-auto">
+                    <div class="text-center">
+                        <div class="font-display font-black text-3xl md:text-4xl text-[#E63946]"> +12 </div>
+                        <div class="font-stencil text-xs tracking-widest text-white/60 mt-1"> ANOS </div>
+                    </div>
+                    <div class="text-center border-x border-white/10">
+                        <div class="font-display font-black text-3xl md:text-4xl text-[#E63946]"> +2k </div>
+                        <div class="font-stencil text-xs tracking-widest text-white/60 mt-1"> TATUAGENS </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="font-display font-black text-3xl md:text-4xl text-[#E63946]"> 100% </div>
+                        <div class="font-stencil text-xs tracking-widest text-white/60 mt-1"> ESTÉRIL </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="ink-divider" aria-hidden="true">
+            <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+                <path d="M0,0 L1200,0 L1200,25 C1150,30 1120,50 1080,40 C1040,30 1020,55 980,45 C940,35 920,55 880,42 C840,28 810,48 770,38 C730,28 700,52 660,40 C620,28 580,50 540,42 C500,34 470,55 430,45 C390,35 360,52 320,42 C280,32 240,55 200,45 C160,35 120,50 80,38 C40,26 20,45 0,35 Z" fill="#1a1a1a" />
+            </svg>
+        </div>
+
+        <section id="portfolio" class="relative py-20 md:py-28 bg-[#1a1a1a] fade-in">
+            <div class="max-w-7xl mx-auto px-5">
+                <div class="text-center mb-12">
+                    <div class="font-stencil text-[#E63946] tracking-[0.3em] text-sm mb-3"> — GALERIA — </div>
+                    <h3 id="portfolioTitle" class="font-display text-3xl md:text-5xl font-black text-white">Portfólio de Artista</h3>
+                    <p id="portfolioSubtitle" class="mt-4 text-white/60 max-w-xl mx-auto">Explore nossos estilos autorais. Cada traço carrega uma assinatura.</p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-3 mb-10">
+                    <button class="tab-btn active px-5 py-3 font-stencil text-sm tracking-widest rounded" data-filter="all"> 🔥 TODOS </button>
+                    <button class="tab-btn px-5 py-3 font-stencil text-sm tracking-widest rounded bg-transparent text-white" data-filter="blackwork"> 💀 BLACKWORK </button>
+                    <button class="tab-btn px-5 py-3 font-stencil text-sm tracking-widest rounded bg-transparent text-white" data-filter="fineline"> ✒️ LINHA FINA </button>
+                    <button class="tab-btn px-5 py-3 font-stencil text-sm tracking-widest rounded bg-transparent text-white" data-filter="realismo"> 🎨 REALISMO </button>
+                </div>
+                <div id="galleryGrid" class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5"></div>
+            </div>
+        </section>
+
+        <div class="ink-divider" aria-hidden="true" style="transform: rotate(180deg);">
+            <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+                <path d="M0,0 L1200,0 L1200,25 C1150,30 1120,50 1080,40 C1040,30 1020,55 980,45 C940,35 920,55 880,42 C840,28 810,48 770,38 C730,28 700,52 660,40 C620,28 580,50 540,42 C500,34 470,55 430,45 C390,35 360,52 320,42 C280,32 240,55 200,45 C160,35 120,50 80,38 C40,26 20,45 0,35 Z" fill="#111111" />
+            </svg>
+        </div>
+
+        <section id="orcamento" class="relative py-20 md:py-28 bg-[#111111] fade-in">
+            <div class="max-w-5xl mx-auto px-5">
+                <div class="text-center mb-12">
+                    <div class="font-stencil text-[#E63946] tracking-[0.3em] text-sm mb-3"> — ORÇAMENTO — </div>
+                    <h3 id="formTitle" class="font-display text-3xl md:text-5xl font-black text-white">Monte Seu Projeto</h3>
+                    <p id="formSubtitle" class="mt-4 text-white/60 max-w-xl mx-auto">Preencha os detalhes abaixo. Nosso tatuador analisará e enviará um retorno com valores e disponibilidade.</p>
+                </div>
+                <form id="quoteForm" class="bg-[#1a1a1a] border border-white/10 rounded p-6 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div class="md:col-span-2">
+                        <label for="fullName" class="font-stencil tracking-widest text-xs text-white/80 mb-2 block">NOME COMPLETO *</label>
+                        <input type="text" id="fullName" name="fullName" class="form-input" placeholder="Como devemos te chamar?" required>
+                    </div>
+                    <div>
+                        <label for="email" class="font-stencil tracking-widest text-xs text-white/80 mb-2 block">E-MAIL *</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com" required>
+                    </div>
+                    <div>
+                        <label for="phone" class="font-stencil tracking-widest text-xs text-white/80 mb-2 block">TELEFONE / WHATSAPP *</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" placeholder="(00) 00000-0000" required>
+                    </div>
+                    <div>
+                        <label for="size" class="font-stencil tracking-widest text-xs text-white/80 mb-2 block">TAMANHO APROXIMADO *</label>
+                        <select id="size" name="size" class="form-input" required>
+                            <option value="">Selecione o tamanho</option>
+                            <option value="ate-5cm">Até 5 cm</option>
+                            <option value="5-10cm">5 a 10 cm</option>
+                            <option value="10-15cm">10 a 15 cm</option>
+                            <option value="15-25cm">15 a 25 cm</option>
+                            <option value="25cm+">Acima de 25 cm</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="bodyLocation" class="font-stencil tracking-widest text-xs text-white/80 mb-2 block">LOCAL DO CORPO *</label>
+                        <select id="bodyLocation" name="bodyLocation" class="form-input" required>
+                            <option value="">Selecione a região</option>
+                            <option value="braco">Braço</option>
+                            <option value="antebraco">Antebraço</option>
+                            <option value="perna">Perna / Coxa</option>
+                            <option value="panturrilha">Panturrilha</option>
+                            <option value="costas">Costas</option>
+                            <option value="peito">Peito</option>
+                            <option value="costelas">Costelas</option>
+                            <option value="mao-pe">Mão / Pé</option>
+                            <option value="pescoco">Pescoço</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="md:col-span-2">
+                        <label for="style" class="font-stencil tracking-widest text-xs text-white/80 mb-2 block">ESTILO DESEJADO *</label>
+                        <select id="style" name="style" class="form-input" required>
+                            <option value="">Qual estilo combina com você?</option>
+                            <option value="blackwork">💀 Blackwork</option>
+                            <option value="fineline">✒️ Linha Fina (Fineline)</option>
+                            <option value="realismo">🎨 Realismo</option>
+                            <option value="old-school">⚓ Old School</option>
+                            <option value="minimalista">◯ Minimalista</option>
+                            <option value="indeciso">🤔 Ainda estou decidindo</option>
+                        </select>
+                    </div>
+                    <div class="md:col-span-2">
+                        <label for="description" class="font-stencil tracking-widest text-xs text-white/80 mb-2 block">DESCRIÇÃO DO PROJETO</label>
+                        <textarea id="description" name="description" rows="4" class="form-input resize-none" placeholder="Conte sua ideia: tema, significado, referências visuais..."></textarea>
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="font-stencil tracking-widest text-xs text-white/80 mb-2 block">IMAGEM DE REFERÊNCIA</label>
+                        <label for="referenceFile" class="file-upload block">
+                            <i data-lucide="image-plus" class="w-8 h-8 mx-auto mb-2 text-white/50"></i>
+                            <div id="fileLabel" class="font-stencil text-xs tracking-widest text-white/70"> CLIQUE PARA ENVIAR OU ARRASTE UMA IMAGEM </div>
+                            <div class="text-xs text-white/40 mt-1"> PNG, JPG — Máx 5 MB </div>
+                            <input type="file" id="referenceFile" name="referenceFile" accept="image/*" class="hidden">
+                        </label>
+                    </div>
+                    <div class="md:col-span-2 pt-2">
+                        <button type="submit" id="submitBtn" class="cta-glow w-full inline-flex items-center justify-center gap-3 px-8 py-4 font-stencil text-sm md:text-base tracking-widest text-white rounded">
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                            <span id="submitText">ENVIAR PARA ANÁLISE DO TATUADOR</span>
+                        </button>
+                        <p class="text-center text-xs text-white/40 mt-4">🔒 Seus dados são privados e utilizados apenas para contato sobre seu projeto.</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="cuidados" class="relative py-20 md:py-28 bg-[#1a1a1a] fade-in">
+            <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="font-stencil text-[#E63946] tracking-[0.3em] text-sm mb-3"> — BIOSSEGURANÇA — </div>
+                    <h3 id="careTitle" class="font-display text-3xl md:text-5xl font-black text-white leading-tight">Nossa biossegurança</h3>
+                    <p id="careText" class="mt-5 text-white/70 leading-relaxed">Materiais 100% descartáveis, aplicados em ambiente esterilizado. Seguimos rigorosamente a ANVISA RDC 55/08 e protocolos internacionais de controle de infecção.</p>
+                    <div class="mt-8 space-y-4">
+                        <div class="care-item">
+                            <div class="flex items-start gap-3">
+                                <i data-lucide="shield-check" class="w-5 h-5 text-[#E63946] mt-1 shrink-0"></i>
+                                <div>
+                                    <div class="font-stencil tracking-wider text-white"> AGULHAS DESCARTÁVEIS </div>
+                                    <div class="text-sm text-white/60"> Abertas na sua frente, uso único e descarte em coletor de perfurocortantes. </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="care-item">
+                            <div class="flex items-start gap-3">
+                                <i data-lucide="spray-can" class="w-5 h-5 text-[#E63946] mt-1 shrink-0"></i>
+                                <div>
+                                    <div class="font-stencil tracking-wider text-white"> AMBIENTE ESTERILIZADO </div>
+                                    <div class="text-sm text-white/60"> Superfícies higienizadas com hospitalar-grade entre cada sessão. </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="care-item">
+                            <div class="flex items-start gap-3">
+                                <i data-lucide="droplet" class="w-5 h-5 text-[#E63946] mt-1 shrink-0"></i>
+                                <div>
+                                    <div class="font-stencil tracking-wider text-white">TINTAS CERTIFICADAS</div>
+                                    <div class="text-sm text-white/60"> Pigmentos veganos com selo internacional de qualidade. </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="downloadGuide" class="mt-8 inline-flex items-center gap-3 px-6 py-3.5 bg-white/5 hover:bg-[#E63946] border border-white/15 hover:border-[#E63946] rounded transition group">
+                        <i data-lucide="download" class="w-4 h-4"></i>
+                        <span class="font-stencil tracking-widest text-sm">BAIXAR GUIA PÓS-TATTOO (PDF)</span>
+                    </button>
+                </div>
+                <div class="relative">
+                    <div class="aspect-square rounded overflow-hidden border border-white/10 bg-gradient-to-br from-[#0a0a0a] to-[#1a1a1a] p-8 flex items-center justify-center relative">
+                        <svg viewBox="0 0 200 200" class="w-full h-full" style="filter: drop-shadow(0 0 20px rgba(230,57,70,0.3));">
+                            <defs>
+                                <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#E63946" />
+                                    <stop offset="100%" stop-color="#b12a36" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="100" cy="100" r="85" fill="none" stroke="url(#redGrad)" stroke-width="1.5" stroke-dasharray="3 3" />
+                            <circle cx="100" cy="100" r="75" fill="none" stroke="#fff" stroke-width="0.5" opacity="0.3" />
+                            <g transform="translate(100,100)">
+                                <rect x="-3" y="-45" width="6" height="60" fill="url(#redGrad)" rx="1" />
+                                <rect x="-15" y="15" width="30" height="10" fill="#fff" rx="2" />
+                                <rect x="-20" y="25" width="40" height="18" fill="url(#redGrad)" rx="3" />
+                                <circle cx="0" cy="34" r="3" fill="#111" />
+                                <line x1="0" y1="-45" x2="0" y2="-60" stroke="#fff" stroke-width="1" />
+                            </g>
+                            <text x="100" y="30" text-anchor="middle" fill="#fff" font-family="Bebas Neue" font-size="12" letter-spacing="2">SEGURANÇA TOTAL</text>
+                            <text x="100" y="185" text-anchor="middle" fill="#E63946" font-family="Bebas Neue" font-size="10" letter-spacing="3"> ANVISA RDC 55/08 </text>
+                        </svg>
+                        <div class="absolute top-4 right-4 px-3 py-1 bg-[#E63946] rounded-full">
+                            <span class="font-stencil text-xs tracking-widest text-white">100% SEGURO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="relative bg-black border-t border-white/5 py-10">
+            <div class="max-w-7xl mx-auto px-5 text-center">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <div class="w-8 h-8 rounded-full border border-[#E63946] flex items-center justify-center">
+                        <i data-lucide="syringe" class="w-4 h-4 text-[#E63946]"></i>
+                    </div>
+                    <span id="footerLogo" class="font-marker text-xl text-white logo-sign">SUA LOGO AQUI!</span>
+                </div>
+                <p class="text-xs text-white/40 tracking-widest font-stencil">© 2025 — ARTE E SEGURANÇA EM CADA AGULHA</p>
+                <div class="flex justify-center gap-5 mt-5">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-white/15 hover:border-[#E63946] hover:text-[#E63946] flex items-center justify-center transition">
+                        <i data-lucide="instagram" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-white/15 hover:border-[#E63946] hover:text-[#E63946] flex items-center justify-center transition">
+                        <i data-lucide="facebook" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full border border-white/15 hover:border-[#E63946] hover:text-[#E63946] flex items-center justify-center transition">
+                        <i data-lucide="mail" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <a id="whatsappBtn" href="#" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 w-14 h-14 md:w-16 md:h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-2xl z-50 whatsapp-float hover:scale-110 transition-transform" aria-label="Contato WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-7 h-7 md:w-8 md:h-8 text-white" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+        </a>
+
+        <div id="lightbox" class="lightbox" role="dialog" aria-label="Visualização ampliada">
+            <button id="lightboxClose" class="absolute top-5 right-5 w-11 h-11 bg-[#E63946] rounded-full flex items-center justify-center text-white hover:scale-110 transition" aria-label="Fechar">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <img id="lightboxImg" src="" alt="">
+        </div>
+
+        <div id="toast" class="toast">
+            <div class="flex items-center gap-3">
+                <i data-lucide="check-circle" class="w-5 h-5 text-[#E63946]"></i>
+                <span id="toastText" class="font-stencil tracking-widest text-sm">ORÇAMENTO ENVIADO COM SUCESSO!</span>
+            </div>
+        </div>
+    </main>
+    <!-- Modal Impulso Digital -->
+<div id="impulso-modal-container" class="impulso-modal">
+    <div class="impulso-content">
+        <button type="button" id="impulso-close-x" class="close-btn" aria-label="Fechar">&times;</button>
+        <div class="impulso-header">IMPULSO DIGITAL</div>
+        <div class="impulso-body">
+            <p class="headline"><strong>Gostou desse modelo ou gostaria de algo mais exclusivo?</strong></p>
+            <p class="subline">Clique no botão abaixo para fazermos um orçamento!</p>
+            <a href="https://wa.me/5569992892060?text=Olá!%20Quero%20meu%20site%20da%20Impulso%20Digital.%20Pode%20me%20ajudar?" 
+               target="_blank" 
+               class="impulso-btn">
+               📲 FAZER MEU ORÇAMENTO
+            </a>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
